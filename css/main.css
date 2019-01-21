@@ -4,37 +4,11 @@
     box-sizing: border-box;
     font-family: 'Open Sans', serif;
 }
+a {
+    color: currentColor;
+}
 body {
     background: #0F111A;
-}
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    padding: 40px 5%;
-    min-height: 98vh;
-}
-@media screen and (max-width: 600px) {
-    .flex-container {
-        flex-wrap: wrap;
-    }
-}
-@media screen and (min-width: 600px) {
-    #user-input {
-        width: 50%;
-    }
-}
-@media screen and (min-width: 600px) {
-    #summary {
-        width: 50%;
-    }
-}
-.flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    padding: 20px;
 }
 figure img {
     border-radius: 25%;
@@ -51,15 +25,53 @@ p {
     max-width: 80%;
     margin: 20px auto;
 }
-a {
-    color: currentColor;
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 5%;
+    min-height: 98vh;
+    align-content: stretch;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+    align-content: stretch
+}
+@media screen and (max-width: 800px) {
+    .flex-container {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width: 800px) {
+    #user-input {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 800px) {
+    #summary {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 800px) {
+    #user-input {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 800px) {
+    #summary {
+        width: 100%;
+    }
 }
 #summary {
-    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
     background: linear-gradient(
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
-    ), url('https://source.unsplash.com/collection/2411320') no-repeat center center fixed;
+    ), url('https://source.unsplash.com/collection/365720') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
